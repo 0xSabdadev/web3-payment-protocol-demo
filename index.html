@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>💸 THR Web3 Payment Protocol Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/stylesheet-web3.css">
+  <link href='assets/favicon-web3-payments-donation-depay.png' rel='shortcut icon'>
+</head>
+
+<body>
+  <div class="hero-body bgcustom">
+    <label for="notify-2">
+      <input id="notify-2" type="checkbox">
+      <i class="fa fa-long-arrow-down"></i>
+      <div id="notification-bar">
+
+        <!-- <div class="container">
+          <i class="fa fa-times-circle"></i>
+          <i class="fa fa-newspaper-o"></i>
+          <p>NEW: Ukraine Donation Button. <a class="btn-action" href="ukraine-crypto-donations.html">Help 🇺🇦</a></p>
+        </div> -->
+      </div>
+    </label>
+    <div class="hero-body has-text-centered">
+      <div class="is-128x128"><img src="assets/favicon-web3-payments-donation-depay.png" style="max-height: 120px;" />
+      </div>
+
+      <br />
+      <p class="title">
+        Send a Web3 THR
+      </p>
+      <p class="subtitle">
+        <span id="hero-subtitle-span">Donate any Ethereum or BSC Tokens</span>
+
+      </p>
+    </div>
+  </div>
+  <section class="web3navi">
+    <div class="tabs is-small is-centered">
+      <ul>
+        <li class="is-active"><a>Donate THR (ETH mainnet)</a></li>
+        <!-- <li><a href="#alexwho">Alex?</a></li>
+        <li><a href="#depaywhat">DePay?</a></li>
+        <li><a href="#redonations">Redonations</a></li> -->
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="hero-body" style="margin-bottom: 4rem; padding-top: 3.5rem;">
+      <div class="DePayButton" label="Connect Wallet" widget="Donation" configuration='{"accept":[
+        {
+          "blockchain": "ethereum",
+          "token": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0x8E870D67F660D95d5be530380D0eC0bd388289E1",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0x956F47F50A910163D8BF957Cf5846D573E7f87CA",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }, {
+          "blockchain": "ethereum",
+          "token": "0xa3865e64121537b5b59b5e239db4acbe6f36aa74",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        },{
+          "blockchain": "ethereum",
+          "token": "0xb8c77482e45f1f44de1745f52c74426c631bdd52",
+          "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+        }]}'>
+      </div>
+
+      <script src="script.js"></script>
+      <noscript><a href="https://depay.fi">Payment</a> is currently not supported without JavaScript enabled.</noscript>
+      <script>
+        DePayButtons.init({
+          document: document
+        });
+      </script>
+  </section>
+  <!-- DePayWidgets.Donation({
+    integration: '4b9d62e5-4b36-4d2b-8ea0-adb018b13197',
+    accept:[
+    ]
+  }) -->
+
+  <!-- , {
+    "blockchain": "bsc",
+    "token": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+    "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+  }, {
+    "blockchain": "bsc",
+    "token": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+    "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+  }, {
+    "blockchain": "bsc",
+    "token": "0x55d398326f99059fF775485246999027B3197955",
+    "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+  }, {
+    "blockchain": "bsc",
+    "token": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+    "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+  }, {
+    "blockchain": "bsc",
+    "token": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+    "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+  }, {
+    "blockchain": "bsc",
+    "token": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+    "receiver": "0x76eaa456dabc80f546a4ce17918ed0dd23de47dd"
+  } -->
+
+
+
+
+
+
+</body>
+
+</html>
