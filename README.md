@@ -2,7 +2,7 @@
 
 I am demonstrating here how easy it is to build a static clientside Crypto Donation page with the purpose of receiving support or funding for your projects (with any tokens & on-the-fly conversion to your configured asset). The routing is based on decentralized liquidity pools (e.g. Uniswap).
 
-- **Demo-URL**: 
+- **Demo-URL**: https://0xsabdadev.github.io/web3-payment-protocol-demo/
 
 ----
 Please share with your peers if you like it 🙏
